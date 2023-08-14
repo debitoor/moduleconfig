@@ -1,28 +1,28 @@
 {
-  "author": "Allan Ebdrup",
-  "name": "moduleconfig",
+  "author": "debitoor",
+  "name": "@debitoor/moduleconfig",
   "description": "configuration loading for node modules",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Muscula/moduleconfig.git"
+    "url": "git+https://github.com/debitoor/moduleconfig.git"
   },
   "private": false,
   "main": "./lib/moduleConfig.js",
   "engines": {
-    "node": ">=0.6.20",
-    "npm": ">=1.1.9"
+    "node": ">=16.20.0",
+    "npm": ">=8.19"
   },
   "dependencies": {},
   "scripts": {
-    "test": "node test.js"
+    "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "",
-    "chai": "",
-    "sinon": "",
-    "sinon-chai": "",
-    "mocha-jshint": ""
+    "mocha": "8.4.0",
+    "chai": "4.3.7",
+    "sinon": "15.2.0",
+    "sinon-chai": "3.7.0",
+    "mocha-jshint": "2.3.1"
   },
   "directories": {
     "test": "test"
@@ -35,7 +35,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Muscula/moduleconfig/issues"
+    "url": "https://github.com/debitoor/moduleconfig/issues"
   },
-  "homepage": "https://github.com/Muscula/moduleconfig#readme"
+  "homepage": "https://github.com/debitoor/moduleconfig#readme"
 }

@@ -2,7 +2,7 @@
 describe("moduleConfig", function () {
 
 	describe("having required exampleModule in test1 dir", function () {
-		var exampleModule1;
+		let exampleModule1;
 		before(function () {
 			exampleModule1 = require("./dirCacheTest/test1/requireExampleModule");
 		});
@@ -12,7 +12,7 @@ describe("moduleConfig", function () {
 		});
 
 		describe("requiring it again ()", function () {
-			var exampleModule2;
+			let exampleModule2;
 			before(function () {
 				//is not cached in require cache
 				exampleModule2 = require("./dirCacheTest/test1/requireExampleModule");
@@ -25,7 +25,7 @@ describe("moduleConfig", function () {
 		});
 	});
 	describe("having required schemagic in test2 dir", function () {
-		var exampleModule1;
+		let exampleModule1;
 		before(function () {
 			exampleModule1 = require("./dirCacheTest/test2/requireExampleModule");
 		});
@@ -35,7 +35,7 @@ describe("moduleConfig", function () {
 		});
 
 		describe("requiring it from subdir", function () {
-			var exampleModule2;
+			let exampleModule2;
 			before(function () {
 				exampleModule2 = require("./dirCacheTest/test2/test2subdir/requireExampleModule");
 			});
@@ -47,7 +47,7 @@ describe("moduleConfig", function () {
 		});
 	});
 	describe("having required exampleModule in test1 dir", function () {
-		var exampleModule1;
+		let exampleModule1;
 		before(function () {
 			exampleModule1 = require("./dirCacheTest/test1/requireExampleModule");
 		});
@@ -57,7 +57,7 @@ describe("moduleConfig", function () {
 		});
 
 		describe("requiring exampleModuleOther in test3 dir", function () {
-			var exampleModule3;
+			let exampleModule3;
 			before(function () {
 				//is not cached in require cache
 				exampleModule3 = require("./dirCacheTest/test3/requireExampleModule");
@@ -70,7 +70,7 @@ describe("moduleConfig", function () {
 		});
 	});
 	describe("having required exampleModule in test4 dir", function () {
-		var exampleModule1;
+		let exampleModule1;
 		before(function () {
 			exampleModule1 = require("./dirCacheTest/test4/requireExampleModule");
 		});
@@ -80,7 +80,7 @@ describe("moduleConfig", function () {
 		});
 
 		describe("requiring exampleModuleOther in test4 dir", function () {
-			var exampleModule4;
+			let exampleModule4;
 			before(function () {
 				//is not cached in require cache
 				exampleModule4 = require("./dirCacheTest/test4/requireExampleModuleOther");
