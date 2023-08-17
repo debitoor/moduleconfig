@@ -5,12 +5,6 @@ loading configuration files for node modules.
 If you are building a node module that needs a configuration file, that the user of the module creates, 
 you have come to the right place.
 
-[![Build Status](https://travis-ci.org/ebdrup/moduleconfig.png)](https://travis-ci.org/ebdrup/moduleconfig)
-
-[![NPM version](https://badge.fury.io/js/moduleconfig.png)](http://badge.fury.io/js/moduleconfig)
-
-[![Dependency Status](https://gemnasium.com/ebdrup/moduleconfig.png)](https://gemnasium.com/ebdrup/moduleconfig)
-
 You are building a module `MyModule` with a user config file
 ------------------------------------------------
 
@@ -40,7 +34,7 @@ Use `moduleconfig` in the module `MyModule`
 
 MyModule.js is the main file pointed to by the `package.json` in the `MyModule` module
 ```js
-var moduleConfig = require("moduleconfig");
+const moduleConfig = require("moduleconfig");
 module.exports = moduleConfig(["config.js"], function(configFilePath){
 	return instantiateMyModulefromConfig(require(configFilePath));
 });
@@ -51,7 +45,7 @@ You will have to implement the `instantiateMyModulefromConfig` function yourself
 
 This will mean that this:
 ```
-var myModule = require("MyModule");
+const myModule = require("MyModule");
 ```
 
 will return an `myModule` based on `Main/node_modules/ExternalModule/config.js` when `MyModule` is required 
